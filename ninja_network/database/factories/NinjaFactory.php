@@ -17,7 +17,9 @@ class NinjaFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name'  => fake()->name(),
+            'bio'   => fake()->realText(100),
+            'skill' => fake()->numberBetween(10, 100)
         ];
     }
 }
