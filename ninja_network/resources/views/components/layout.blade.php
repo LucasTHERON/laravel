@@ -6,14 +6,14 @@
 
     @vite('resources/css/app.css')
 </head>
-<body class=" text-center px-8 py-12">
+<body class="px-8 py-12">
     
 <header>
     <nav>
         <h1>Ninja network</h1>
         <a href="/">Homepage</a>
-        <a href="/ninjas">All ninjas</a>
-        <a href="/ninjas/create">Add ninjas</a>
+        <a href="{{ route('ninjas.index') }}">All ninjas</a>
+        <a href="{{ route('ninjas.create') }}">Add ninjas</a>
     </nav>
 </header>
 
